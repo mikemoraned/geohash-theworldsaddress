@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0f83f9-1fd5-4ce5-9340-6a9389021cd0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/what_map1.html" afterPath="$PROJECT_DIR$/what_map1.html" />
     </list>
     <ignored path="geohash-theworldsaddress.iws" />
@@ -25,21 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="73" selection-start="2208" selection-end="2208" vertical-scroll-proportion="-26.25" vertical-offset="270" max-vertical-offset="7050">
+            <state line="69" column="57" selection-start="2453" selection-end="2482" vertical-scroll-proportion="0.8783008" vertical-offset="270" max-vertical-offset="7050">
               <folding>
-                <marker date="1396391129000" expanded="true" signature="7294:7500" placeholder="..." />
+                <marker date="1396394667000" expanded="true" signature="7199:7405" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="what_map1.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="what_map1.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/what_map1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="25" selection-start="862" selection-end="862" vertical-scroll-proportion="0.40723982" vertical-offset="0" max-vertical-offset="900">
+            <state line="16" column="24" selection-start="657" selection-end="657" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -82,8 +83,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/what_map1.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -286,19 +287,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/what_map1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="73" selection-start="2208" selection-end="2208" vertical-scroll-proportion="-26.25" vertical-offset="270" max-vertical-offset="7050">
-          <folding>
-            <marker date="1396391129000" expanded="true" signature="7294:7500" placeholder="..." />
-          </folding>
+        <state line="16" column="24" selection-start="657" selection-end="657" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="930">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/what_map1.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="862" selection-end="862" vertical-scroll-proportion="0.40723982" vertical-offset="0" max-vertical-offset="900">
-          <folding />
+        <state line="69" column="57" selection-start="2453" selection-end="2482" vertical-scroll-proportion="0.8783008" vertical-offset="270" max-vertical-offset="7050">
+          <folding>
+            <marker date="1396394667000" expanded="true" signature="7199:7405" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
