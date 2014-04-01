@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- leaflet + stamen maps -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
+    <style type="text/css">
+        #map {
+            position: absolute; left: 0px; top: 0px; width: 500px; height: 326px;
+        }
+        .partition {
+            position: absolute; top: 0px; z-index: 1000;
+            line-height: 326px;
+            text-align: center;
+            color: white;
+            font-size: 800%;
+        }
+        #partition_0 {
+            left: 0px;
+            width: 250px; height: 326px;
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+        #partition_1 {
+            left: 250px;
+            width: 250px; height: 326px;
+            background-color: rgba(0, 255, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+<div class="partition" id="partition_0">
+    0
+</div>
+<div class="partition" id="partition_1">
+    1
+</div>
+<div id="map">
+
+</div>
+<script type="text/javascript">
+    (function(){
+        var layer = new L.StamenTileLayer("toner");
+        var map = new L.Map("map", {
+            center: new L.LatLng(0, 0),
+            zoom: 1,
+            zoomControl: false
+        });
+        map.addLayer(layer);
+
+        // w21zf0bce
+        var singapore = L.marker([1.3667, 103.8000]);
+        singapore.addTo(map);
+    })();
+</script>
+</body>
+</html>
