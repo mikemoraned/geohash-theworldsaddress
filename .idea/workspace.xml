@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0f83f9-1fd5-4ce5-9340-6a9389021cd0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/what_map1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="geohash-theworldsaddress.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="25" selection-start="3521" selection-end="3521" vertical-scroll-proportion="0.96555686" vertical-offset="659" max-vertical-offset="6990">
+            <state line="60" column="73" selection-start="2208" selection-end="2208" vertical-scroll-proportion="-26.25" vertical-offset="270" max-vertical-offset="7050">
               <folding>
-                <marker date="1396389260000" expanded="true" signature="6926:7132" placeholder="..." />
+                <marker date="1396391129000" expanded="true" signature="7294:7500" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="outline.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outline.html">
+      <file leaf-file-name="what_map1.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/what_map1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="12" selection-start="705" selection-end="953" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="8" column="38" selection-start="396" selection-end="396" vertical-scroll-proportion="0.13574661" vertical-offset="0" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -82,6 +84,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/what_map1.html" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -285,19 +288,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outline.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="12" selection-start="705" selection-end="953" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
+        <state line="60" column="73" selection-start="2208" selection-end="2208" vertical-scroll-proportion="-26.25" vertical-offset="270" max-vertical-offset="7050">
+          <folding>
+            <marker date="1396391129000" expanded="true" signature="7294:7500" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/what_map1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="25" selection-start="3521" selection-end="3521" vertical-scroll-proportion="0.96555686" vertical-offset="659" max-vertical-offset="6990">
-          <folding>
-            <marker date="1396389260000" expanded="true" signature="6926:7132" placeholder="..." />
-          </folding>
+        <state line="8" column="38" selection-start="396" selection-end="396" vertical-scroll-proportion="0.13574661" vertical-offset="0" max-vertical-offset="884">
+          <folding />
         </state>
       </provider>
     </entry>
