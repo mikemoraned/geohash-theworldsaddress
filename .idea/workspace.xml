@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0f83f9-1fd5-4ce5-9340-6a9389021cd0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/what_map1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/what_map1.html" afterPath="$PROJECT_DIR$/what_map1.html" />
     </list>
     <ignored path="geohash-theworldsaddress.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +39,7 @@
       <file leaf-file-name="what_map1.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/what_map1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="38" selection-start="396" selection-end="396" vertical-scroll-proportion="0.13574661" vertical-offset="0" max-vertical-offset="884">
+            <state line="15" column="48" selection-start="550" selection-end="550" vertical-scroll-proportion="0.2545249" vertical-offset="0" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -84,8 +82,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/what_map1.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/what_map1.html" />
       </list>
     </option>
   </component>
@@ -299,7 +297,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/what_map1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="396" selection-end="396" vertical-scroll-proportion="0.13574661" vertical-offset="0" max-vertical-offset="884">
+        <state line="15" column="48" selection-start="550" selection-end="550" vertical-scroll-proportion="0.2545249" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>

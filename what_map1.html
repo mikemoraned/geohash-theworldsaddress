@@ -6,7 +6,7 @@
     <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
     <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
     <style type="text/css">
-        #map { height: 400px; width: 500px; }
+        #map { width: 500px; height: 326px; }
     </style>
 </head>
 <body>
@@ -15,10 +15,15 @@
     (function(){
         var layer = new L.StamenTileLayer("toner");
         var map = new L.Map("map", {
-            center: new L.LatLng(37.7, -122.4),
-            zoom: 12
+            center: new L.LatLng(0, 0),
+            zoom: 1,
+            zoomControl: false
         });
         map.addLayer(layer);
+
+        // w21zf0bce
+        var singapore = L.marker([1.3667, 103.8000]);
+        singapore.addTo(map);
     })();
 </script>
 </body>
