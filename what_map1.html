@@ -6,11 +6,36 @@
     <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
     <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
     <style type="text/css">
-        #map { width: 500px; height: 326px; }
+        #map {
+            position: absolute; left: 0px; top: 0px; width: 500px; height: 326px;
+        }
+        .partition {
+            position: absolute; top: 0px; z-index: 1000;
+        }
+        #partition_0 {
+            left: 0px;
+            width: 250px; height: 326px;
+            background-color: red;
+            opacity: 0.5;
+        }
+        #partition_1 {
+            left: 250px;
+            width: 250px; height: 326px;
+            background-color: green;
+            opacity: 0.5;
+        }
     </style>
 </head>
 <body>
-<div id="map"></div>
+<div class="partition" id="partition_0">
+    0
+</div>
+<div class="partition" id="partition_1">
+    1
+</div>
+<div id="map">
+
+</div>
 <script type="text/javascript">
     (function(){
         var layer = new L.StamenTileLayer("toner");
