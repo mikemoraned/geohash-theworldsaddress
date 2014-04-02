@@ -28,6 +28,17 @@
             lat_lon: [1.3667, 103.8000]
         };
 
+        var geohashes = [
+            'w21zf0bce',
+            'w21zf0bc',
+            'w21zf0b',
+            'w21zf0',
+            'w21zf',
+            'w21z',
+            'w21',
+            'w2',
+            'w'];
+
         var layer = new L.StamenTileLayer("toner");
         var map = new L.Map("map", {
             center: new L.LatLng(0, 0),
@@ -36,19 +47,31 @@
         });
         map.addLayer(layer);
 
-        var bbox = ngeohash.decode_bbox(singapore.geohash);
-        var minlat = bbox[0];
-        var minlon = bbox[1];
-        var maxlat = bbox[2];
-        var maxlon = bbox[3];
+        var count = 0;
+        var showNext = function() {
+            if (count < geohashes.length) {
+                var geohash = geohashes[count];
+                console.log(geohash);
 
-        var southWest = L.latLng(minlat, minlon);
-        var northEast = L.latLng(maxlat, maxlon);
-        var bounds = L.latLngBounds(southWest, northEast);
+                var bbox = ngeohash.decode_bbox(geohash);
+                var minlat = bbox[0];
+                var minlon = bbox[1];
+                var maxlat = bbox[2];
+                var maxlon = bbox[3];
 
-        L.rectangle(bounds, {color: "#ff7800", weight: 1}).addTo(map);
+                var southWest = L.latLng(minlat, minlon);
+                var northEast = L.latLng(maxlat, maxlon);
+                var bounds = L.latLngBounds(southWest, northEast);
 
-        map.fitBounds(bounds);
+                L.rectangle(bounds, {color: "#ff7800", weight: 1}).addTo(map);
+
+                map.fitBounds(bounds);
+
+                count++;
+            }
+        };
+
+        setInterval(showNext, 3000);
 
         L.marker(singapore.lat_lon).addTo(map);
     })();
