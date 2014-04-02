@@ -30,8 +30,6 @@
     (function(){
         var ngeohash = require('ngeohash');
 
-        console.dir(ngeohash);
-
         var singapore = {
             geohash: 'w21zf0bce',
             lat_lon: [1.3667, 103.8000]
@@ -56,38 +54,49 @@
         });
         map.addLayer(layer);
 
+        var rectangles = [];
+        var zoomToGeoHash = function(geohash) {
+            console.log(geohash);
+
+            document.getElementById("geohash").innerHTML = geohash;
+
+            var bbox = ngeohash.decode_bbox(geohash);
+            var minlat = bbox[0];
+            var minlon = bbox[1];
+            var maxlat = bbox[2];
+            var maxlon = bbox[3];
+
+            var southWest = L.latLng(minlat, minlon);
+            var northEast = L.latLng(maxlat, maxlon);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var rectangle = L.rectangle(bounds, {color: "red", weight: 1});
+            rectangles.push(rectangle);
+            rectangle.addTo(map);
+
+            map.fitBounds(bounds);
+        };
+        var clearRectangles = function() {
+            rectangles.forEach(function(rectangle){
+                map.removeLayer(rectangle);
+            });
+            rectangles = [];
+        };
+
         var count = 0;
         var showNext = function() {
-            if (count < geohashes.length) {
-                var geohash = geohashes[count];
-                console.log(geohash);
-
-                document.getElementById("geohash").innerHTML = geohash;
-
-                var bbox = ngeohash.decode_bbox(geohash);
-                var minlat = bbox[0];
-                var minlon = bbox[1];
-                var maxlat = bbox[2];
-                var maxlon = bbox[3];
-
-                var southWest = L.latLng(minlat, minlon);
-                var northEast = L.latLng(maxlat, maxlon);
-                var bounds = L.latLngBounds(southWest, northEast);
-
-                L.rectangle(bounds, {color: "red", weight: 1}).addTo(map);
-
-                map.fitBounds(bounds, {
-                    duration: 5.0,
-                    easeLinearity: 1.0
-                });
-
-                count++;
+            if (count >= geohashes.length) {
+                clearRectangles();
+                count = 0;
             }
+            var geohash = geohashes[count];
+            zoomToGeoHash(geohash);
+            count++;
         };
 
         showNext();
 
-        setInterval(showNext, 2000);
+        setInterval(showNext, 3000);
 
         L.marker(singapore.lat_lon).addTo(map);
     })();
