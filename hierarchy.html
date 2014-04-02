@@ -31,20 +31,16 @@
         var ngeohash = require('ngeohash');
 
         var singapore = {
-            geohash: 'w21zf0bce',
             lat_lon: [1.3667, 103.8000]
         };
 
-        var geohashes = [
-            'w21zf0bce',
-            'w21zf0bc',
-            'w21zf0b',
-            'w21zf0',
-            'w21zf',
-            'w21z',
-            'w21',
-            'w2',
-            'w'];
+        var geohash = ngeohash.encode(singapore.lat_lon[0], singapore.lat_lon[1]);
+        var geohashes = [];
+        for(var i = geohash.length; i >= 1; i--) {
+            geohashes.push(geohash.substring(0, i));
+        }
+
+        console.log(geohashes);
 
         var layer = new L.StamenTileLayer("toner");
         var map = new L.Map("map", {
