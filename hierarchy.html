@@ -33,8 +33,13 @@
         var singapore = {
             lat_lon: [1.3667, 103.8000]
         };
+        var edinburgh = {
+            lat_lon: [55.953252, -3.188266999999996]
+        };
 
-        var geohash = ngeohash.encode(singapore.lat_lon[0], singapore.lat_lon[1]);
+        var town = edinburgh;
+
+        var geohash = ngeohash.encode(town.lat_lon[0], town.lat_lon[1]);
         var geohashes = [];
         for(var i = geohash.length; i >= 1; i--) {
             geohashes.push(geohash.substring(0, i));
