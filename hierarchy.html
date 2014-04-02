@@ -28,6 +28,9 @@
             lat_lon: [1.3667, 103.8000]
         };
 
+        // [minlat, minlon, maxlat, maxlon]
+        var bbox = ngeohash.decode_bbox(singapore.geohash);
+       
 
         var layer = new L.StamenTileLayer("toner");
         var map = new L.Map("map", {
@@ -36,6 +39,12 @@
             zoomControl: false
         });
         map.addLayer(layer);
+
+        var bounds = [[54.559322, -5.767822], [56.1210604, -3.021240]];
+
+        L.rectangle(bounds, {color: "#ff7800", weight: 1}).addTo(map);
+
+        map.fitBounds(bounds);
 
         L.marker(singapore.lat_lon).addTo(map);
     })();

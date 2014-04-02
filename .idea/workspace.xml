@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0f83f9-1fd5-4ce5-9340-6a9389021cd0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hierarchy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hierarchy.html" afterPath="$PROJECT_DIR$/hierarchy.html" />
     </list>
     <ignored path="geohash-theworldsaddress.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +46,7 @@
       <file leaf-file-name="hierarchy.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hierarchy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.50790066" vertical-offset="0" max-vertical-offset="886">
+            <state line="32" column="7" selection-start="802" selection-end="906" vertical-scroll-proportion="0.54176074" vertical-offset="0" max-vertical-offset="886">
               <folding />
             </state>
           </provider>
@@ -387,7 +385,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hierarchy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.50790066" vertical-offset="0" max-vertical-offset="886">
+        <state line="32" column="7" selection-start="802" selection-end="906" vertical-scroll-proportion="0.54176074" vertical-offset="0" max-vertical-offset="886">
           <folding />
         </state>
       </provider>
