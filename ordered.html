@@ -86,33 +86,27 @@
             reverseBase32Map[item] = index;
         });
 
-        var geohashes = [
-            'gcvwr23ve',
-            'gcvwr23vf',
-            'gcvwr23vg',
-            'gcvwr23vh',
-            'gcvwr23vj',
-            'gcvwr23vk',
-            'gcvwr23vm',
-            'gcvwr23vn',
-            'gcvwr23vp',
-            'gcvwr23vq',
-            'gcvwr23vr',
-            'gcvwr23vs',
-            'gcvwr23vt',
-            'gcvwr23vu',
-            'gcvwr23vv',
-            'gcvwr23vw',
-            'gcvwr23vx',
-            'gcvwr23vy',
-            'gcvwr23vz',
-            'gcvwr23w0',
-        ];
-
-        var count = 0;
         var nextGeoHash = function(geohash) {
-            var next = geohashes[count % geohashes.length];
-            count++;
+            var exploded = geohash.split("");
+            var result = exploded.reduceRight(function(previousValue, currentValue){
+                var shouldCarry = previousValue[0];
+                var array = previousValue[1];
+                if (shouldCarry) {
+                    var index = reverseBase32Map[currentValue];
+                    var nextIndex = index + 1;
+                    if (nextIndex < base32.length - 1) {
+                        return [false, [base32[nextIndex]].concat(array)];
+                    }
+                    else {
+                        return [true, [base32[0]].concat(array)];
+                    }
+                }
+                else {
+                    return [false, [currentValue].concat(array)];
+                }
+            }, [true, []]);
+            var next = result[1].join('');
+//            console.log(next);
             return next;
         };
 
@@ -125,7 +119,7 @@
 
         showNext();
 
-        setInterval(showNext, 500);
+        setInterval(showNext, 1000);
 
         L.marker(singapore.lat_lon).addTo(map);
     })();
