@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0f83f9-1fd5-4ce5-9340-6a9389021cd0" name="Default" comment="zoom to a rectangle&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch hierarchy&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;modified:   hierarchy.html&#10;#&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/what_map2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/location.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/what_map1.html" afterPath="$PROJECT_DIR$/what_map1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="geohash-theworldsaddress.iws" />
@@ -28,10 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="50" selection-start="2748" selection-end="2748" vertical-scroll-proportion="0.76119405" vertical-offset="492" max-vertical-offset="6990">
+            <state line="63" column="24" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-20.125" vertical-offset="462" max-vertical-offset="7035">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/location.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="0" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.8133484" vertical-offset="781" max-vertical-offset="1665">
               <folding />
             </state>
           </provider>
@@ -116,6 +124,7 @@
         <option value="$PROJECT_DIR$/what_map1.html" />
         <option value="$PROJECT_DIR$/what_map2.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/location.html" />
       </list>
     </option>
   </component>
@@ -463,7 +472,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="50" selection-start="2748" selection-end="2748" vertical-scroll-proportion="0.76119405" vertical-offset="492" max-vertical-offset="6990">
+        <state line="63" column="24" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-20.125" vertical-offset="462" max-vertical-offset="7035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/location.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="0" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.8133484" vertical-offset="781" max-vertical-offset="1665">
           <folding />
         </state>
       </provider>
