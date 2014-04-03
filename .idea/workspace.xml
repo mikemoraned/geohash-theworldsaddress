@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0f83f9-1fd5-4ce5-9340-6a9389021cd0" name="Default" comment="zoom to a rectangle&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch hierarchy&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;modified:   hierarchy.html&#10;#&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/location.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/location.html" afterPath="$PROJECT_DIR$/location.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/what_map2.html" afterPath="$PROJECT_DIR$/what_map2.html" />
     </list>
     <ignored path="geohash-theworldsaddress.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +29,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="24" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-20.125" vertical-offset="462" max-vertical-offset="7035">
+            <state line="63" column="24" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-2.625" vertical-offset="882" max-vertical-offset="7035">
               <folding />
             </state>
           </provider>
@@ -39,7 +38,7 @@
       <file leaf-file-name="location.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/location.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="0" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.8133484" vertical-offset="781" max-vertical-offset="1665">
+            <state line="38" column="30" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.6447964" vertical-offset="0" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -48,7 +47,7 @@
       <file leaf-file-name="what_map1.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/what_map1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1163" selection-end="1411" vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="870">
+            <state line="23" column="22" selection-start="843" selection-end="843" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="870">
               <folding />
             </state>
           </provider>
@@ -75,7 +74,7 @@
       <file leaf-file-name="what_map2.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/what_map2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="30" selection-start="874" selection-end="874" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="870">
+            <state line="27" column="9" selection-start="981" selection-end="981" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="870">
               <folding />
             </state>
           </provider>
@@ -122,8 +121,8 @@
         <option value="$PROJECT_DIR$/hierarchy.html" />
         <option value="$PROJECT_DIR$/ordered.html" />
         <option value="$PROJECT_DIR$/what_map1.html" />
-        <option value="$PROJECT_DIR$/what_map2.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/what_map2.html" />
         <option value="$PROJECT_DIR$/location.html" />
       </list>
     </option>
@@ -442,20 +441,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/what_map1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1163" selection-end="1411" vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/what_map2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="30" selection-start="874" selection-end="874" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hierarchy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="47" selection-start="1675" selection-end="1675" vertical-scroll-proportion="-3.7083333" vertical-offset="781" max-vertical-offset="1665">
@@ -472,14 +457,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="24" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-20.125" vertical-offset="462" max-vertical-offset="7035">
+        <state line="63" column="24" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-2.625" vertical-offset="882" max-vertical-offset="7035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/what_map1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="22" selection-start="843" selection-end="843" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/what_map2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="9" selection-start="981" selection-end="981" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/location.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.8133484" vertical-offset="781" max-vertical-offset="1665">
+        <state line="38" column="30" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.6447964" vertical-offset="0" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>

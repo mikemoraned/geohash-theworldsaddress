@@ -30,22 +30,7 @@
     (function(){
         var ngeohash = require('ngeohash');
 
-        var singapore = {
-            lat_lon: [1.3667, 103.8000]
-        };
-        var edinburgh = {
-            lat_lon: [55.944713, -3.194463]
-        };
-
-        var town = edinburgh;
-
-        var geohash = "ezs42"; //ngeohash.encode(town.lat_lon[0], town.lat_lon[1]);
-        var geohashes = [];
-        for(var i = geohash.length; i >= 1; i--) {
-            geohashes.push(geohash.substring(0, i));
-        }
-
-        console.log(geohashes);
+        var geohash = "ezs42";
 
         var layer = new L.StamenTileLayer("toner");
         var map = new L.Map("map", {
@@ -84,22 +69,7 @@
             rectangles = [];
         };
 
-        var count = 0;
-        var showNext = function() {
-            if (count >= geohashes.length) {
-                clearRectangles();
-                count = 0;
-            }
-            var geohash = geohashes[count];
-            zoomToGeoHash(geohash);
-            count++;
-        };
-
-        showNext();
-
-//        setInterval(showNext, 3000);
-
-        L.marker(singapore.lat_lon).addTo(map);
+        zoomToGeoHash(geohash);
     })();
 </script>
 </body>
