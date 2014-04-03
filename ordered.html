@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- leaflet + stamen maps -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
+    <script src="ngeohash.js"></script>
+    <style type="text/css">
+        #map {
+            position: absolute; left: 0px; top: 0px; width: 600px; height: 426px;
+        }
+        .geohash_holder {
+            position: absolute; top: 5px; left: 5px; z-index: 1000;
+            color: black;
+            font-size: 300%;
+            background-color: red;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+<div class="geohash_holder">
+    <span id="geohash"></span>
+</div>
+<div id="map">
+
+</div>
+<script type="text/javascript">
+    (function(){
+        var ngeohash = require('ngeohash');
+
+        var singapore = {
+            lat_lon: [1.3667, 103.8000]
+        };
+        var edinburgh = {
+            lat_lon: [55.944713, -3.194463]
+        };
+
+        var town = edinburgh;
+
+        var geohash = ngeohash.encode(town.lat_lon[0], town.lat_lon[1]);
+
+        var layer = new L.StamenTileLayer("toner");
+        var map = new L.Map("map", {
+            center: new L.LatLng(0, 0),
+            zoom: 1,
+            zoomControl: false
+        });
+        map.addLayer(layer);
+
+        var rectangles = [];
+        var zoomToGeoHash = function(geohash) {
+            console.log(geohash);
+
+            document.getElementById("geohash").innerHTML = geohash;
+
+            var bbox = ngeohash.decode_bbox(geohash);
+            var minlat = bbox[0];
+            var minlon = bbox[1];
+            var maxlat = bbox[2];
+            var maxlon = bbox[3];
+
+            var southWest = L.latLng(minlat, minlon);
+            var northEast = L.latLng(maxlat, maxlon);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var rectangle = L.rectangle(bounds, {color: "red", weight: 1});
+            rectangles.push(rectangle);
+            rectangle.addTo(map);
+
+            map.fitBounds(bounds);
+        };
+        var clearRectangles = function() {
+            rectangles.forEach(function(rectangle){
+                map.removeLayer(rectangle);
+            });
+            rectangles = [];
+        };
+
+        var base32 = ['0','1','2','3','4','5','6','7','8','9','b','c','d','e','f','g',
+            'h','j','k','m','n','p','q','r','s','t','u','v','w','x','y','z'
+        ];
+        var reverseBase32Map = {};
+        base32.forEach(function(item, index){
+            reverseBase32Map[item] = index;
+        });
+
+        var nextGeoHash = function(geohash) {
+            var exploded = geohash.split("");
+            var result = exploded.reduceRight(function(previousValue, currentValue){
+                var shouldCarry = previousValue[0];
+                var array = previousValue[1];
+                if (shouldCarry) {
+                    var index = reverseBase32Map[currentValue];
+                    var nextIndex = index + 1;
+                    if (nextIndex < base32.length) {
+                        return [false, [base32[nextIndex]].concat(array)];
+                    }
+                    else {
+                        return [true, [base32[0]].concat(array)];
+                    }
+                }
+                else {
+                    return [false, [currentValue].concat(array)];
+                }
+            }, [true, []]);
+            var next = result[1].join('');
+//            console.log(next);
+            return next;
+        };
+
+        var current = geohash;
+
+        var showNext = function() {
+            zoomToGeoHash(current);
+            current = nextGeoHash(current);
+        };
+
+        showNext();
+
+        setInterval(showNext, 1000);
+
+        L.marker(singapore.lat_lon).addTo(map);
+    })();
+</script>
+</body>
+</html>
