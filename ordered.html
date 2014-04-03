@@ -39,7 +39,7 @@
 
         var town = edinburgh;
 
-        var geohash = ngeohash.encode(town.lat_lon[0], town.lat_lon[1]);
+        var geohash = "gcvwr23w0"; //ngeohash.encode(town.lat_lon[0], town.lat_lon[1]);
 
         var layer = new L.StamenTileLayer("toner");
         var map = new L.Map("map", {
@@ -94,7 +94,7 @@
                 if (shouldCarry) {
                     var index = reverseBase32Map[currentValue];
                     var nextIndex = index + 1;
-                    if (nextIndex < base32.length - 1) {
+                    if (nextIndex < base32.length) {
                         return [false, [base32[nextIndex]].concat(array)];
                     }
                     else {
