@@ -39,7 +39,7 @@
 
         var town = edinburgh;
 
-        var geohash = "g"; //ngeohash.encode(town.lat_lon[0], town.lat_lon[1]);
+        var geohash = ngeohash.encode(town.lat_lon[0], town.lat_lon[1]);
 
         var layer = new L.StamenTileLayer("toner");
         var map = new L.Map("map", {
@@ -78,39 +78,54 @@
             rectangles = [];
         };
 
-        var nextNeighbour = function(geohash) {
-            var zone = [geohash];
-            var directions = [-1, 0, 1];
-            for (var i = 0; i < directions.length; i++) {
-                for (var j = 0; j < directions.length; j++) {
-                    if (!(i === 0 && j ===0)) {
-                        zone.push(ngeohash.neighbor(current, [i, j]));
-                    }
-                }
-            }
-            zone = zone.sort();
-            var selected = null;
-            zone.forEach(function(item, index){
-                if (item === geohash) {
-                    selected = zone[index + 1];
-                }
-            });
-            console.dir(selected);
-            return selected;
+        var base32 = ['0','1','2','3','4','5','6','7','8','9','b','c','d','e','f','g',
+            'h','j','k','m','n','p','q','r','s','t','u','v','w','x','y','z'
+        ];
+        var reverseBase32Map = {};
+        base32.forEach(function(item, index){
+            reverseBase32Map[item] = index;
+        });
+
+        var geohashes = [
+            'gcvwr23ve',
+            'gcvwr23vf',
+            'gcvwr23vg',
+            'gcvwr23vh',
+            'gcvwr23vj',
+            'gcvwr23vk',
+            'gcvwr23vm',
+            'gcvwr23vn',
+            'gcvwr23vp',
+            'gcvwr23vq',
+            'gcvwr23vr',
+            'gcvwr23vs',
+            'gcvwr23vt',
+            'gcvwr23vu',
+            'gcvwr23vv',
+            'gcvwr23vw',
+            'gcvwr23vx',
+            'gcvwr23vy',
+            'gcvwr23vz',
+            'gcvwr23w0',
+        ];
+
+        var count = 0;
+        var nextGeoHash = function(geohash) {
+            var next = geohashes[count % geohashes.length];
+            count++;
+            return next;
         };
 
         var current = geohash;
 
-        nextNeighbour(current);
-
         var showNext = function() {
             zoomToGeoHash(current);
-            current = nextNeighbour(current);
+            current = nextGeoHash(current);
         };
 
         showNext();
 
-        setInterval(showNext, 3000);
+        setInterval(showNext, 500);
 
         L.marker(singapore.lat_lon).addTo(map);
     })();
