@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0f83f9-1fd5-4ce5-9340-6a9389021cd0" name="Default" comment="zoom to a rectangle&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch hierarchy&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;modified:   hierarchy.html&#10;#&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/location.html" afterPath="$PROJECT_DIR$/location.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/what_map2.html" afterPath="$PROJECT_DIR$/what_map2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="geohash-theworldsaddress.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="24" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-2.625" vertical-offset="882" max-vertical-offset="7035">
+            <state line="112" column="103" selection-start="4985" selection-end="4985" vertical-scroll-proportion="0.86452353" vertical-offset="927" max-vertical-offset="7185">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="location.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="location.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/location.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="30" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.6447964" vertical-offset="0" max-vertical-offset="1215">
+            <state line="38" column="30" selection-start="1149" selection-end="1149" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -121,9 +120,9 @@
         <option value="$PROJECT_DIR$/hierarchy.html" />
         <option value="$PROJECT_DIR$/ordered.html" />
         <option value="$PROJECT_DIR$/what_map1.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/what_map2.html" />
         <option value="$PROJECT_DIR$/location.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -455,13 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="24" selection-start="2229" selection-end="2229" vertical-scroll-proportion="-2.625" vertical-offset="882" max-vertical-offset="7035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/what_map1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="22" selection-start="843" selection-end="843" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="870">
@@ -478,7 +470,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/location.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="30" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.6447964" vertical-offset="0" max-vertical-offset="1215">
+        <state line="38" column="30" selection-start="1149" selection-end="1149" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="103" selection-start="4985" selection-end="4985" vertical-scroll-proportion="0.86452353" vertical-offset="927" max-vertical-offset="7185">
           <folding />
         </state>
       </provider>
