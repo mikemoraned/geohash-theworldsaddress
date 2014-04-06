@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0f83f9-1fd5-4ce5-9340-6a9389021cd0" name="Default" comment="zoom to a rectangle&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch hierarchy&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;modified:   hierarchy.html&#10;#&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hierarchy.html" afterPath="$PROJECT_DIR$/hierarchy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ordered.html" afterPath="$PROJECT_DIR$/ordered.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="geohash-theworldsaddress.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="103" selection-start="4985" selection-end="4985" vertical-scroll-proportion="0.0" vertical-offset="1680" max-vertical-offset="7185">
+            <state line="114" column="102" selection-start="5189" selection-end="5189" vertical-scroll-proportion="0.7193606" vertical-offset="1305" max-vertical-offset="7215">
               <folding />
             </state>
           </provider>
@@ -63,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ordered.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ordered.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordered.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="52" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.49479166" vertical-offset="255" max-vertical-offset="1995">
+            <state line="36" column="52" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-11.875" vertical-offset="255" max-vertical-offset="1995">
               <folding />
             </state>
           </provider>
@@ -121,10 +119,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/what_map1.html" />
         <option value="$PROJECT_DIR$/location.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/what_map2.html" />
         <option value="$PROJECT_DIR$/hierarchy.html" />
         <option value="$PROJECT_DIR$/ordered.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -265,7 +263,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24954683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24954683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -557,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="103" selection-start="4985" selection-end="4985" vertical-scroll-proportion="0.0" vertical-offset="1680" max-vertical-offset="7185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/what_map2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="12" selection-start="773" selection-end="773" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="870">
@@ -587,7 +578,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ordered.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="52" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.49479166" vertical-offset="255" max-vertical-offset="1995">
+        <state line="36" column="52" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-11.875" vertical-offset="255" max-vertical-offset="1995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="102" selection-start="5189" selection-end="5189" vertical-scroll-proportion="0.7193606" vertical-offset="1305" max-vertical-offset="7215">
           <folding />
         </state>
       </provider>
